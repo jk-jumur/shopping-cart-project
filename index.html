@@ -23,27 +23,26 @@
              <h2 class="text-[#111827] text-2xl font-semibold ">Welcome to JK Shop</h2>
              <p class="text-[#4A5565]">Sign in to continue shopping</p>
 
-             <!-- Email Input -->
+             <!-- Email Input Field -->
              <form class="w-full flex items-center flex-col mt-4 gap-3">
                  <div class="w-full">
                 <p class="text-[16px] text-[#111827] font-medium mb-1">Email Address</p>
                 <label class="input validator w-full bg-[#E8F0FE] rounded-xl">
-              <input type="email" class="w-full bg-[#E8F0FE]" placeholder="mail@site.com" required />
+
+              <input type="email" id="email" class="w-full bg-[#E8F0FE]" placeholder="agency@agency.com" required />
              </label>
               <div class="validator-hint hidden">Enter valid email address</div>
                 </div>
 
-                 <!-- Password Input-->
+                 <!-- Password Input Field-->
                    <div class="w-full">
                   <p class="text-[16px] font-medium text-[#111827] mb-1">Password</p>
                  <label class="input validator w-full bg-[#E8F0FE] rounded-xl">
               
-                <input 
+                <input id="password"
                 type="password"
                 required
-                 placeholder="Password"
-                 minlength="8"
-                 pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                 placeholder="password"
                 title="Must be more than 8 characters, including number, lowercase letter, uppercase letter"
               />
                 </label>
@@ -61,7 +60,7 @@
                        <a href="#" class="text-[#4F46E5]">Forgot password?</a>
                    </div>
 
-                   <button type="submit" class=" w-full bg-[#4F46E5] text-white py-2 rounded-xl">Sign In</button>
+                   <button id="signinBtn" type="submit" class=" w-full bg-[#4F46E5] text-white py-2 rounded-xl">Sign In</button>
 
                    <p class="text-[#4A5565]">Don't have an account? <a href="#" class="text-[#4F46E5]">Contact Us</a></p>
              </form>
