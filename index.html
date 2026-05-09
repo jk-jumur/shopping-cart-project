@@ -4,8 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
-</head>
-<body>
-    
+
+    <!-- Tailwind CSS And Daisy UI -->
+
+      <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+      <!--Font Awesome CDN-->
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<body class="bg-[#F9FAFB] h-svh flex  justify-center  items-center">
+      <div class="bg-white p-8 rounded-2xl shadow-lg flex flex-col items-center space-y-3">
+            <!--Icons-->
+            <div class="bg-[#4F46E5] text-white w-fit rounded-2xl p-4">
+               <i class="fa-solid fa-arrow-right-to-bracket"></i>
+           </div>
+             <h2 class="text-[#111827] text-2xl font-semibold ">Welcome to JK Shop</h2>
+             <p class="text-[#4A5565]">Sign in to continue shopping</p>
+
+             <!-- Email Input -->
+             <form class="w-full">
+                <p class="text-[16px] text-[#111827] font-medium">Email Address</p>
+                <label class="input validator">
+                 <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <g
+                 stroke-linejoin="round"
+                 stroke-linecap="round"
+                 stroke-width="2.5"
+                 fill="none"
+                 stroke="currentColor"
+                >
+               <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+             </g>
+              </svg>
+             <input type="email" placeholder="mail@site.com" required />
+             </label>
+              <div class="validator-hint hidden">Enter valid email address</div>
+
+                 <!-- Password Input-->
+                  <p class="text-[16px] font-medium text-[#111827]">Password</p>
+                 <label class="input validator">
+                 <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                 <g
+                 stroke-linejoin="round"
+                 stroke-linecap="round"
+                 stroke-width="2.5"
+                fill="none"
+                 stroke="currentColor"
+                >
+                <path
+                d="M2.586 17.414A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814a6.5 6.5 0 1 0-4-4z"
+              ></path>
+               <circle cx="16.5" cy="7.5" r=".5"      fill="currentColor"></circle>
+                </g>
+               </svg>
+                <input
+                type="password"
+                required
+                 placeholder="Password"
+                 minlength="8"
+                 pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                title="Must be more than 8 characters, including number, lowercase letter, uppercase letter"
+              />
+                </label>
+              <p class="validator-hint hidden">
+              Must be more than 8 characters, including
+               <br />At least one number <br />At least one lowercase letter <br />At least one uppercase letter
+                 </p>
+
+                   <div class="flex items-center justify-between">
+                       <div class="flex items-center gap-2">
+                          <input type="checkbox" class="checkbox" />
+                          <p>Remember Me</p>
+                       </div>
+                       <a href="#" class="text-[#4F46E5]">Forgot password?</a>
+                         
+                   </div>
+             </form>
+        </div>
 </body>
 </html>
