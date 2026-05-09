@@ -10,7 +10,7 @@ signinBtn.addEventListener('click', (e) => {
     if(!emailValue || !passwordValue){
          alert("please provide the email and  password");
     } else if(emailValue === "agency@agency.com" && passwordValue  === "admin123"){
-           alert("Login Successfully");
+          window.location.href = "./home.html"
     } else{
          alert("Invalid Email And Password");
     }
